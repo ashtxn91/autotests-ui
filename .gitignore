@@ -1,0 +1,19 @@
+# pycharm
+.idea/
+
+# Локальные окружения и конфиги
+venv/
+__pycache__
+
+# allure
+allure-results/
+allure-report/
+
+# testing artifacts
+*.html
+*.json
+videos/
+tracing/
+
+# Служебные файлы macOS
+.DS_Store
