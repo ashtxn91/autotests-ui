@@ -14,7 +14,6 @@ class Browser(str, Enum):
 
 class TestUser(BaseSettings):
     model_config = SettingsConfigDict(env_prefix="TEST_USER")
-
     email: EmailStr
     username: str
     password: str
@@ -28,6 +27,7 @@ class TestData(BaseSettings):
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
+        extra='allow',
         env_file=".env",
         env_file_encoding="utf-8",
         env_nested_delimiter=".",

@@ -17,3 +17,9 @@ tracing/
 
 # Служебные файлы macOS
 .DS_Store
+
+# coverage
+coverage.html
+coverage-results/
+coverage-report.json
+coverage-history.json
